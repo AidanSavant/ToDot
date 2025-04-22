@@ -1,6 +1,3 @@
-#![allow(warnings)]
-
-use layout::gv;
 use to_dot_derive::ToDot;
 
 #[derive(ToDot)]
