@@ -60,8 +60,7 @@ fn to_dot_derive_impl(input: &DeriveInput) -> Result<pm2_tokenstream, pm2_tokens
     ))
 }
 
-fn get_fields(data: &Data) -> Result<&Punctuated<Field, Comma>, pm2_tokenstream> 
-{
+fn get_fields(data: &Data) -> Result<&Punctuated<Field, Comma>, pm2_tokenstream> {
     match data {
         Data::Struct(data_struct) => {
             match &data_struct.fields {
